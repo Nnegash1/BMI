@@ -1,0 +1,234 @@
+#VRML V2.0 utf8
+
+#Created with V-Realm Builder v2.0
+#Integrated Data Systems Inc.
+#www.ids-net.com
+
+
+SpotLight {
+}
+SpotLight {
+	location	0 0 0
+}
+Background {
+	groundAngle	[ 2.9, 4.3, 3.07 ]
+	groundColor	[ 0 0.8 0,
+			  0.174249 0.82 0.187362,
+			  0.467223 0.82 0.445801,
+			  0.621997 0.67 0.600279 ]
+	skyAngle	[ 0.1, 1.2, 1.57 ]
+	skyColor	[ 0.76238 0.8 0.1427,
+			  0.277798 0.219779 0.7,
+			  0.222549 0.390234 0.7,
+			  0.60094 0.662637 0.69 ]
+}
+DEF Joint1 Transform {
+	translation	-4.5 0 0
+	children [ 
+	    Shape {
+		    appearance	Appearance {
+			    material	Material {
+			    }
+
+		    }
+
+		    geometry	Sphere {
+			    radius	0.6
+		    }
+
+	    }
+
+	    DEF arm1 Transform {
+		    translation	1.9 0 0
+		    rotation	0 0 1  1.5708
+		    children [ 
+			Shape {
+				appearance	Appearance {
+					material	Material {
+					}
+
+				}
+
+				geometry	Cylinder {
+					height	3
+					radius	0.4
+				}
+
+			}
+
+			DEF joint2 Transform {
+				translation	0 -1.9 0
+				rotation	0 0 1  1.5708
+				children [ 
+				    Shape {
+					    appearance	Appearance {
+						    material	Material {
+						    }
+
+					    }
+
+					    geometry	Sphere {
+						    radius	0.6
+					    }
+
+				    }
+
+				    DEF arm2 Transform {
+					    translation	-1.30001 -1.3 -4.17233e-007
+					    rotation	0 0 -1  0.785398
+					    scale	1 1 1
+					    children [ 
+						Shape {
+							appearance	Appearance {
+								material	Material {
+								}
+
+							}
+
+							geometry	Cylinder {
+								height	3
+								radius	0.4
+							}
+
+						}
+
+						DEF joint3 Transform {
+							translation	0 -2 0
+							children [ 
+							    Shape {
+								    appearance	Appearance {
+									    material	Material {
+									    }
+
+								    }
+
+								    geometry	Sphere {
+									    radius	0.6
+								    }
+
+							    }
+
+							    DEF arm3 Transform {
+								    translation	0.7 -0.700002 -5.66244e-007
+								    rotation	0 0 1  0.785398
+								    children [ 
+									Shape {
+										appearance	Appearance {
+											material	Material {
+											}
+
+										}
+
+										geometry	Cylinder {
+											height	1.4
+											radius	0.2
+										}
+
+									}
+
+									DEF joint4 Transform {
+										translation	2.98024e-006 -0.699999 -9.53674e-007
+										rotation	0 0 1  0.785398
+										children [ 
+										    Shape {
+											    appearance	Appearance {
+												    material	Material {
+												    }
+
+											    }
+
+											    geometry	Sphere {
+												    radius	0.4
+											    }
+
+										    }
+
+										    DEF arm4 Transform {
+											    translation	-0.400041 0.399993 -0.185502
+											    rotation	0 0 1  0.785398
+											    scale	1 1 1
+											    children Shape {
+												    appearance	Appearance {
+													    material	Material {
+													    }
+
+												    }
+
+												    geometry	Cylinder {
+													    height	1
+													    radius	0.2
+												    }
+
+											    }
+										    }
+										]
+									}
+								    ]
+							    }
+
+							    DEF arm3 Transform {
+								    translation	-0.7 -0.7 0
+								    rotation	0 0 -1  0.785398
+								    children [ 
+									Shape {
+										appearance	Appearance {
+											material	Material {
+											}
+
+										}
+
+										geometry	Cylinder {
+											height	1.4
+											radius	0.2
+										}
+
+									}
+
+									DEF joint5 Transform {
+										translation	4.09273e-011 -0.699993 3.8743e-007
+										rotation	0 0 -1  0.785398
+										children [ 
+										    Shape {
+											    appearance	Appearance {
+												    material	Material {
+												    }
+
+											    }
+
+											    geometry	Sphere {
+												    radius	0.4
+											    }
+
+										    }
+
+										    DEF arm5 Transform {
+											    translation	0.400008 0.400001 7.59959e-007
+											    rotation	0 0 -1  0.785398
+											    children Shape {
+												    appearance	Appearance {
+													    material	Material {
+													    }
+
+												    }
+
+												    geometry	Cylinder {
+													    height	1
+													    radius	0.2
+												    }
+
+											    }
+										    }
+										]
+									}
+								    ]
+							    }
+							]
+						}
+					    ]
+				    }
+				]
+			}
+		    ]
+	    }
+	]
+}
